@@ -22,7 +22,7 @@ switch($op) {
 		$eventHandler = icms_getModuleHandler('event', 'extcal');
 		$fileHandler = icms_getModuleHandler('file', 'extcal');
 
-		// If the date format is wrong
+		//If the date format is wrong
 		if(!preg_match('`[0-9]{4}-[01][0-9]-[0123][0-9]`', $_POST['event_start']['date']) ||
 			!preg_match('`[0-9]{4}-[01][0-9]-[0123][0-9]`', $_POST['event_end']['date'])) {
 			redirect_header('event.php', 3, _MD_EXTCAL_WRONG_DATE_FORMAT.'<br />'.implode('<br />', icms::$security->getErrors()));
@@ -124,6 +124,7 @@ switch($op) {
 		$eventHandler->formatEventsDate($events, 'd/m/Y');
 		
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#990000;">'._AM_EXTCAL_APPROVED_EVENT.'</legend>';
+		
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#0A3760;">'._AM_EXTCAL_INFORMATION.'</legend>';
 		echo '<img src="../images/edit.gif" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_EDIT.'<br />';
 		echo '<img src="../images/delete.gif" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_DELETE;
@@ -131,6 +132,9 @@ switch($op) {
 
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#0A3760;">'._MD_EXTCAL_SUBMITED_EVENT.'</legend>';
 
+		$pageNav = new icms_view_PageNav($eventHandler->getCountNewEvent(), 10, $start);
+		echo '<span style="float: right;">'.$pageNav->renderNav(3).'</span>';
+		
 		echo '<table class="outer" style="width:100%;">';
 		echo '<tr style="text-align:center;">';
 		echo '<th>#</th>';
@@ -161,25 +165,17 @@ switch($op) {
 				echo '</td>';
 				echo '</tr>';
 			}
-			
-			$pageNav = new icms_view_PageNav($eventHandler->getCountNewEvent(), 10, $start);
-			
-			echo '<tr><td colspan="5" style="text-align: right;">';
-			echo $pageNav->renderNav(3);
-			echo '</td></tr>';
 		} else {
 			echo '<tr><td colspan="4">'._AM_NO_PENDING_EVENT.'</td></tr>';
 		}
 		echo '</table>';
 
 		echo '</fieldset>';
-		echo '</fieldset><br /><br />';
+		echo '</fieldset><br />';
 
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#990000;">'._MD_EXTCAL_SUBMIT_EVENT.'</legend>';
-
 		$form = $eventHandler->getEventForm('admin');
 		$form->display();
-
 		echo '</fieldset>';
 
 		icms_cp_footer();
