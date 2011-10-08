@@ -213,14 +213,14 @@ class ExtcalPersistableObjectHandler extends icms_core_ObjectHandler {
     {
         $field = "";
         $groupby = false;
-        if (isset($criteria) && is_subclass_of($criteria, 'criteriaelement')) {
+        if (isset($criteria) && is_subclass_of($criteria, 'icms_db_criteria_Element')) {
             if ($criteria->groupby != "") {
                 $groupby = true;
                 $field = $criteria->groupby.", "; //Not entirely secure unless you KNOW that no criteria's groupby clause is going to be mis-used
             }
         }
         $sql = 'SELECT '.$field.'COUNT(*) FROM '.$this->table;
-        if (isset($criteria) && is_subclass_of($criteria, 'criteriaelement')) {
+        if (isset($criteria) && is_subclass_of($criteria, 'icms_db_criteria_Element')) {
             $sql .= ' '.$criteria->renderWhere();
             if ($criteria->groupby != "") {
                 $sql .= $criteria->getGroupby();
