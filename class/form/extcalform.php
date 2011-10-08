@@ -1,5 +1,7 @@
 <?php
 include ICMS_ROOT_PATH.'/modules/extcal/class/form/formdatetime.php';
+include ICMS_ROOT_PATH.'/modules/extcal/class/form/calendarformdatetime.php';
+include ICMS_ROOT_PATH.'/modules/extcal/class/form/calendarformtextdateselect.php';
 include ICMS_ROOT_PATH.'/modules/extcal/class/form/formrecurrules.php';
 include ICMS_ROOT_PATH.'/modules/extcal/class/form/formfilecheckbox.php';
 include ICMS_ROOT_PATH.'/modules/extcal/class/form/formrrulecheckbox.php';

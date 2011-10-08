@@ -29,7 +29,7 @@ class ExtcalFormDateTime {
 		// Start date element's form
 		$startElmtTray = new icms_form_elements_Tray(_MD_EXTCAL_START_DATE, '&nbsp;');
 
-		$startDate = new icms_form_elements_Date('', 'event_start[date]', 15, $startTS);
+		$startDate = new calendar_form_elements_Date('', 'event_start[date]', 15, $startTS);
 		$startDate->setExtra('onBlur=\'validDate("event_start[date]", "event_start[time]", "event_end[date]", "event_end[time]");\'');
 		$startElmtTray->addElement($startDate);
 
@@ -47,7 +47,7 @@ class ExtcalFormDateTime {
 
 		$endElmtTray->addElement(new icms_form_elements_Radioyn(_MD_EXTCAL_EVENT_END, 'have_end', 1));
 
-		$endDate = new icms_form_elements_Date('', 'event_end[date]', 15, $endTS);
+		$endDate = new calendar_form_elements_Date('', 'event_end[date]', 15, $endTS);
 		$endDate->setExtra('onBlur=\'validDate("event_start[date]", "event_start[time]", "event_end[date]", "event_end[time]");\'');
 		$endDateElmtTray->addElement($endDate);
 
