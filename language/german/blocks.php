@@ -10,7 +10,7 @@ define("_MB_EXTCAL_NEXT","Nächste");
 define("_MB_EXTCAL_ALL_CAT","Alle Kategorien");
 define("_MB_EXTCAL_SUBMIT_LINK_TEXT","Termin einsenden");
 define("_MB_EXTCAL_DISPLAY","Anzeige");
-define("_MB_EXTCAL_EVENT","Events");
+define("_MB_EXTCAL_EVENTS","Events");
 define("_MB_EXTCAL_TITLE_LENGTH","Titellänge");
 define('_MB_EXTCAL_SS_WIDTH', 'Breite der Slideshow');
 define('_MB_EXTCAL_SS_HEIGHT', 'Höhe der Slideshow');
@@ -19,4 +19,7 @@ define('_MB_EXTCAL_SS_PAUSE_TIME', 'Slideshow pause time');
 define('_MB_EXTCAL_SS_NB_PHOTOS', 'Slideshow Fotos');
 define('_MB_EXTCAL_PX', 'px');
 define('_MB_EXTCAL_SECONDES', 'Sekunden');
+define('_MB_EXTCAL_EVENT', 'Event');
+define('_MB_EXTCAL_STARTDATE', 'Start');
+define('_MB_EXTCAL_STARTEND', 'End');
 ?>

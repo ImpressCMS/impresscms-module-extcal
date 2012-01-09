@@ -379,7 +379,7 @@ function bExtcalUpcomingEdit($options) {
 	$cats = $catHandler->getAllCat(icms::$user, 'extcal_cat_view');
 
 	$form = _MB_EXTCAL_DISPLAY."&nbsp;\n";
-	$form .= "<input name=\"options[0]\" size=\"5\" maxlength=\"255\" value=\"".$options[0]."\" type=\"text\" />&nbsp;"._MB_EXTCAL_EVENT."<br />";
+	$form .= "<input name=\"options[0]\" size=\"5\" maxlength=\"255\" value=\"".$options[0]."\" type=\"text\" />&nbsp;"._MB_EXTCAL_EVENTS."<br />";
 	$form .= _MB_EXTCAL_TITLE_LENGTH." : <input name=\"options[1]\" size=\"5\" maxlength=\"255\" value=\"".$options[1]."\" type=\"text\" /><br />";
 	array_shift($options);
 	array_shift($options);
@@ -434,7 +434,7 @@ function bExtcalDayEdit($options) {
 	$cats = $catHandler->getAllCat(icms::$user, 'extcal_cat_view');
 
 	$form = _MB_EXTCAL_DISPLAY."&nbsp;\n";
-	$form .= "<input name=\"options[0]\" size=\"5\" maxlength=\"255\" value=\"".$options[0]."\" type=\"text\" />&nbsp;"._MB_EXTCAL_EVENT."<br />";
+	$form .= "<input name=\"options[0]\" size=\"5\" maxlength=\"255\" value=\"".$options[0]."\" type=\"text\" />&nbsp;"._MB_EXTCAL_EVENTS."<br />";
 	$form .= _MB_EXTCAL_TITLE_LENGTH." : <input name=\"options[1]\" size=\"5\" maxlength=\"255\" value=\"".$options[1]."\" type=\"text\" /><br />";
 	array_shift($options);
 	array_shift($options);
@@ -489,7 +489,7 @@ function bExtcalNewEdit($options) {
 	$cats = $catHandler->getAllCat(icms::$user, 'extcal_cat_view');
 
 	$form = _MB_EXTCAL_DISPLAY."&nbsp;\n";
-	$form .= "<input name=\"options[0]\" size=\"5\" maxlength=\"255\" value=\"".$options[0]."\" type=\"text\" />&nbsp;"._MB_EXTCAL_EVENT."<br />";
+	$form .= "<input name=\"options[0]\" size=\"5\" maxlength=\"255\" value=\"".$options[0]."\" type=\"text\" />&nbsp;"._MB_EXTCAL_EVENTS."<br />";
 	$form .= _MB_EXTCAL_TITLE_LENGTH." : <input name=\"options[1]\" size=\"5\" maxlength=\"255\" value=\"".$options[1]."\" type=\"text\" /><br />";
 	array_shift($options);
 	array_shift($options);
@@ -544,7 +544,7 @@ function bExtcalRandomEdit($options) {
 	$cats = $catHandler->getAllCat(icms::$user, 'extcal_cat_view');
 
 	$form = _MB_EXTCAL_DISPLAY."&nbsp;\n";
-	$form .= "<input name=\"options[0]\" size=\"5\" maxlength=\"255\" value=\"".$options[0]."\" type=\"text\" />&nbsp;"._MB_EXTCAL_EVENT."<br />";
+	$form .= "<input name=\"options[0]\" size=\"5\" maxlength=\"255\" value=\"".$options[0]."\" type=\"text\" />&nbsp;"._MB_EXTCAL_EVENTS."<br />";
 	$form .= _MB_EXTCAL_TITLE_LENGTH." : <input name=\"options[1]\" size=\"5\" maxlength=\"255\" value=\"".$options[1]."\" type=\"text\" /><br />";
 	array_shift($options);
 	array_shift($options);

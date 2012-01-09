@@ -11,7 +11,7 @@ define("_MB_EXTCAL_NEXT","Volgende");
 define("_MB_EXTCAL_ALL_CAT","Alle categoriën");
 define("_MB_EXTCAL_SUBMIT_LINK_TEXT","Nieuwe afspraak");
 define("_MB_EXTCAL_DISPLAY","Laat zien");
-define("_MB_EXTCAL_EVENT","afspraken");
+define("_MB_EXTCAL_EVENTS","evenementen");
 define("_MB_EXTCAL_TITLE_LENGTH","Lengte van de titel");
 define('_MB_EXTCAL_SS_WIDTH', 'Slideshow breedte');
 define('_MB_EXTCAL_SS_HEIGHT', 'Slideshow hoogte');
@@ -20,5 +20,7 @@ define('_MB_EXTCAL_SS_PAUSE_TIME', 'Slideshow pauze tijd');
 define('_MB_EXTCAL_SS_NB_PHOTOS', 'Slideshow aantal beelden');
 define('_MB_EXTCAL_PX', 'px');
 define('_MB_EXTCAL_SECONDES', 'seconden');
-
+define('_MB_EXTCAL_EVENT', 'Evenement');
+define('_MB_EXTCAL_STARTDATE', 'Start');
+define('_MB_EXTCAL_STARTEND', 'Eind');
 ?>

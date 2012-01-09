@@ -11,7 +11,7 @@ define("_MB_EXTCAL_NEXT","Next");
 define("_MB_EXTCAL_ALL_CAT","All categories");
 define("_MB_EXTCAL_SUBMIT_LINK_TEXT","Submit event");
 define("_MB_EXTCAL_DISPLAY","Display");
-define("_MB_EXTCAL_EVENT","events");
+define("_MB_EXTCAL_EVENTS","events");
 define("_MB_EXTCAL_TITLE_LENGTH","Title lenght");
 define('_MB_EXTCAL_SS_WIDTH', 'Slideshow width');
 define('_MB_EXTCAL_SS_HEIGHT', 'Slideshow height');
@@ -20,5 +20,8 @@ define('_MB_EXTCAL_SS_PAUSE_TIME', 'Slideshow pause time');
 define('_MB_EXTCAL_SS_NB_PHOTOS', 'Slideshow nb photos');
 define('_MB_EXTCAL_PX', 'px');
 define('_MB_EXTCAL_SECONDES', 'secondes');
+define('_MB_EXTCAL_EVENT', 'Event');
+define('_MB_EXTCAL_STARTDATE', 'Start');
+define('_MB_EXTCAL_STARTEND', 'End');
 
 ?>
