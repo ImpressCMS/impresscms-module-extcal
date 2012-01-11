@@ -6,6 +6,9 @@ function bExtcalMinicalAddEventToArray(&$event, &$eventsArray, $extcalTimeHandle
 	$startEvent = xoops_getUserTimestamp($event['event_start'], $extcalTimeHandler->_getUserTimeZone(icms::$user));
 	$endEvent = xoops_getUserTimestamp($event['event_end'], $extcalTimeHandler->_getUserTimeZone(icms::$user));
 
+	$month = date('n');
+	$year = date('Y');
+
 	// This event start before this month and finish after
 	if($startEvent < $startMonth && $endEvent > $endMonth) {
 		$endFor = date('t',mktime(0,0,0,$month,1,$year));
