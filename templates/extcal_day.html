@@ -16,7 +16,7 @@
 	<tr>
 		<td colspan="3" class="odd" style="vertical-align:middle;">
 			<div style="height:20px; width:5px; background-color:#<{$event.cat.cat_color}>; border:1px solid black; float:left; margin-right:5px;"></div>
-			<{$event.formated_event_start}>&nbsp;&nbsp;<a href="<{$icms_url}>/modules/extcal/event.php?event=<{$event.event_id}>" class="extcalTips" title="<{$event.event_title}> :: <b><{$lang.start}></b> <{$event.formated_event_start}><br /><b><{$lang.end}></b> <{$event.formated_event_end}>"><{$event.event_title}></a>
+			<{$event.formated_event_start}>&nbsp;&nbsp;<a href="<{$icms_url}>/modules/extcal/event.php?event=<{$event.event_id}>" class="extcalTips" title="<{$event.event_title}> :: <{$lang.start}> <{$event.formated_event_start}> - <{$lang.end}> <{$event.formated_event_end}>"><{$event.event_title}></a>
 		</td>
 	</tr>
 	<{/foreach}>
