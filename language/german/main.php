@@ -119,4 +119,6 @@ define('_MD_EXTCAL_RR_WEEKLY', 'Jede Woche, am %s für %u Wochen');
 define('_MD_EXTCAL_RR_MONTHLY', 'Jeden Monat, am %s für %u Monate');
 define('_MD_EXTCAL_RR_YEARLY', 'Jedes Jahr, am %s the %s, für %u Jahre');
 define('_MD_EXTCAL_EVENT_CREATED', 'Event erfolgreich erstellt');
+
+define('_MD_EXTCAL_FEED', 'RSS Feed');
 ?>

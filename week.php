@@ -76,7 +76,8 @@ $lang = array(
 	'year'=>_MD_EXTCAL_NAV_YEAR,
 	'month'=>_MD_EXTCAL_NAV_MONTH,
 	'week'=>_MD_EXTCAL_NAV_WEEK,
-	'day'=>_MD_EXTCAL_NAV_DAY
+	'day'=>_MD_EXTCAL_NAV_DAY,
+	'feed'=>_MD_EXTCAL_FEED
 );
 // Assigning language data to the template
 $xoopsTpl->assign('lang', $lang);

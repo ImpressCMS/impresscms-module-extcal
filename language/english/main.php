@@ -119,4 +119,6 @@ define('_MD_EXTCAL_RR_DAILY', 'Each day during %u days');
 define('_MD_EXTCAL_RR_WEEKLY', 'Each week, on%s during %u weeks');
 define('_MD_EXTCAL_RR_MONTHLY', 'Each month, the %s during %u month');
 define('_MD_EXTCAL_RR_YEARLY', 'Each year, on%s the %s, during %u years');
+
+define('_MD_EXTCAL_FEED', 'RSS Feed');
 ?>
