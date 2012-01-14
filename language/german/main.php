@@ -121,4 +121,6 @@ define('_MD_EXTCAL_RR_YEARLY', 'Jedes Jahr, am %s the %s, für %u Jahre');
 define('_MD_EXTCAL_EVENT_CREATED', 'Event erfolgreich erstellt');
 
 define('_MD_EXTCAL_FEED', 'RSS Feed');
+define('_MD_EXTCAL_PRINT', 'Print event');
+define('_MD_EXTCAL_DELETE', 'Delete event');
 ?>

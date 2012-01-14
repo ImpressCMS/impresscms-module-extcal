@@ -66,7 +66,10 @@ $lang = array(
 	'whosnot_going'=>_MD_EXTCAL_WHOSNOT_GOING,
 	'reccur_rule'=>_MD_EXTCAL_RECCUR_RULE,
 	'posted_by'=>_MD_EXTCAL_POSTED_BY,
-	'on'=>_MD_EXTCAL_ON
+	'on'=>_MD_EXTCAL_ON,
+	'edit'=>_MD_EXTCAL_EDIT_EVENT,
+	'print'=>_MD_EXTCAL_PRINT,
+	'delete'=>_MD_EXTCAL_DELETE
 );
 // Assigning language data to the template
 $xoopsTpl->assign('lang', $lang);

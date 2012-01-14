@@ -121,4 +121,6 @@ define('_MD_EXTCAL_RR_MONTHLY', 'Each month, the %s during %u month');
 define('_MD_EXTCAL_RR_YEARLY', 'Each year, on%s the %s, during %u years');
 
 define('_MD_EXTCAL_FEED', 'RSS Feed');
+define('_MD_EXTCAL_PRINT', 'Print event');
+define('_MD_EXTCAL_DELETE', 'Delete event');
 ?>
