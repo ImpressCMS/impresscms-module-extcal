@@ -39,7 +39,7 @@ class ExtcalEventnotmemberHandler extends ExtcalPersistableObjectHandler {
 	}
 
 	function getMembers($eventId) {
-		$memberHandler = icms::handler('member');
+		$memberHandler = icms::handler('icms_member');
 		$eventNotMember = $this->getObjects(new icms_db_criteria_Item('event_id', $eventId));
 		$count = count($eventNotMember);
 		if($count > 0) {
