@@ -42,7 +42,7 @@ class ExtcalCatHandler extends ExtcalPersistableObjectHandler {
 		$catId = $this->getInsertId();
 
 		// Retriving permission mask
-		$gpermHandler =& icms::handler('icms_member_groupperm');
+		$gpermHandler = icms::handler('icms_member_groupperm');
 		$moduleId = icms::$module->getVar('mid');
 
 		$criteria = new icms_db_criteria_Compo();
@@ -51,7 +51,7 @@ class ExtcalCatHandler extends ExtcalPersistableObjectHandler {
 		$permMask = $gpermHandler->getObjects($criteria);
 
 		// Retriving group list
-		$memberHandler =& icms::handler('icms_member');
+		$memberHandler = icms::handler('icms_member');
 		$glist = $memberHandler->getGroupList();
 
 		// Applying permission mask
