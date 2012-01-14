@@ -11,6 +11,10 @@ Files removed:
 - xoops_version.php
 - admin/function.php
 - images/extcal_logo.png
-- images/ left_both.gif
+- images/left_both.gif
 - images/modadminbig.gif
 - images/right_both.gif
+- images/approve.gif
+- images/delete.gif
+- images/edit.gif
+- images/print.gif

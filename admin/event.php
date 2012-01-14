@@ -86,7 +86,6 @@ switch($op) {
 		echo '</fieldset><br />';
 
 		icms_cp_footer();
-
 		break;
 
 	case 'delete':
@@ -126,8 +125,8 @@ switch($op) {
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#990000;">'._AM_EXTCAL_APPROVED_EVENT.'</legend>';
 		
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#0A3760;">'._AM_EXTCAL_INFORMATION.'</legend>';
-		echo '<img src="../images/edit.gif" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_EDIT.'<br />';
-		echo '<img src="../images/delete.gif" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_DELETE;
+		echo '<img src="../images/edit.png" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_EDIT.'<br />';
+		echo '<img src="../images/delete.png" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_DELETE;
 		echo '</fieldset><br />';
 
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#0A3760;">'._MD_EXTCAL_SUBMITED_EVENT.'</legend>';
@@ -160,8 +159,8 @@ switch($op) {
 				}
 				echo '<td>'.$event['formated_event_end'].'</td>';
 				echo '<td style="width:10%; text-align:center;">';
-				echo '<a href="event.php?op=modify&amp;event_id='.$event['event_id'].'"><img src="../images/edit.gif" /></a>&nbsp;&nbsp;';
-				echo '<a href="event.php?op=delete&amp;event_id='.$event['event_id'].'"><img src="../images/delete.gif" /></a>';
+				echo '<a href="event.php?op=modify&amp;event_id='.$event['event_id'].'"><img src="../images/edit.png" /></a>&nbsp;&nbsp;';
+				echo '<a href="event.php?op=delete&amp;event_id='.$event['event_id'].'"><img src="../images/delete.png" /></a>';
 				echo '</td>';
 				echo '</tr>';
 			}

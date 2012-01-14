@@ -2,15 +2,6 @@
 
 include '../../../include/cp_header.php';
 
-/* function extCalLastVersion() {
-    return 2.22;
-}
-
-function isUpToDate() {
-	$version = extCalLastVersion();
-	return icms::$module->getVar('version') >= $version;
-} */
-
 if(isset($_GET['op'])) {
 	$op = $_GET['op'];
 } else if(isset($_POST['op'])) {
@@ -73,7 +64,6 @@ switch($op) {
 				echo $xoopsMailer->getErrors();
 
 				icms_cp_footer();
-
 				break;
 
 			case 'default':
@@ -105,7 +95,6 @@ switch($op) {
 				echo '</fieldset>';
 
 				icms_cp_footer();
-
 				break;
 
 		}
@@ -122,15 +111,6 @@ switch($op) {
 		$eventHandler = icms_getModuleHandler('event', 'extcal');
 
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#990000;">'._AM_EXTCAL_MODULE_ADMIN_SUMMARY.'</legend>';
-		/* echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#0A3760;">'._AM_EXTCAL_UPDATE_INFO.'</legend>';
-		if(!extCalLastVersion()) {
-			echo "<span style=\"color:black; font-weight:bold;\">"._AM_EXTCAL_CHECK_UPDATE_ERROR."</span>";
-		} else if(!isUpToDate()) {
-			echo "<h3 style=\"color:red;\">"._AM_EXTCAL_UPDATE_KO."</h3><br /><form action=\"upgrade.php\" method=\"post\"><input type=\"hidden\" name=\"step\" value=\"download\" /><input class=\"formButton\" value=\""._AM_EXTCAL_UPDATE_UPGRADE."\" type=\"submit\" /></form>";
-		} else {
-			echo "<span style=\"color:green;\">"._AM_EXTCAL_UPDATE_OK."</span>";
-		}
-		echo '</fieldset>'; */
 		echo '<br />';
 		echo '<a href="cat.php">'._AM_EXTCAL_CATEGORY.'</a> : <b>'.$catHandler->getCount().'</b> | ';
 		echo '<a href="event.php">'._AM_EXTCAL_EVENT.'</a> : <b>'.$eventHandler->getCount(new icms_db_criteria_Item('event_approved', 1)).'</b> | ';
@@ -146,9 +126,9 @@ switch($op) {
 
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#990000;">'._AM_EXTCAL_PENDING_EVENT.'</legend>';
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#0A3760;">'._AM_EXTCAL_INFORMATION.'</legend>';
-		echo '<img src="../images/approve.gif" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_APPROVE_PENDING_EVENT.'<br />';
-		echo '<img src="../images/edit.gif" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_EDIT_PENDING_EVENT.'<br />';
-		echo '<img src="../images/delete.gif" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_DELETE_PENDING_EVENT;
+		echo '<img src="../images/approve.png" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_APPROVE_PENDING_EVENT.'<br />';
+		echo '<img src="../images/edit.png" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_EDIT_PENDING_EVENT.'<br />';
+		echo '<img src="../images/delete.png" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_DELETE_PENDING_EVENT;
 		echo '</fieldset><br />';
 
 		echo '<table class="outer" style="width:100%;">';
@@ -170,8 +150,8 @@ switch($op) {
 				echo '<td>'.$event['formated_event_start'].'</td>';
 				echo '<td>'.$event['formated_event_end'].'</td>';
 				echo '<td style="width:10%; text-align:center;">';
-				echo '<a href="event.php?op=modify&amp;event_id='.$event['event_id'].'"><img src="../images/edit.gif" /></a>&nbsp;&nbsp;';
-				echo '<a href="event.php?op=delete&amp;event_id='.$event['event_id'].'"><img src="../images/delete.gif" /></a>';
+				echo '<a href="event.php?op=modify&amp;event_id='.$event['event_id'].'"><img src="../images/edit.png" /></a>&nbsp;&nbsp;';
+				echo '<a href="event.php?op=delete&amp;event_id='.$event['event_id'].'"><img src="../images/delete.png" /></a>';
 				echo '</td>';
 				echo '</tr>';
 			}
