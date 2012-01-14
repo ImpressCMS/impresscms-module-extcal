@@ -1,21 +1,21 @@
 <table class="outer">
 	<tr>
-		<th colspan="3" style="font-size:1.2em;">
+		<th colspan="3" style="font-size:1.1em; padding: 4px;">
 			<div style="float:left;">
 				<{$event.event_title}>
 			</div>
-			<div style="text-align:right;">
-				<a href="<{$icms_url}>/modules/extcal/print.php?event=<{$event.event_id}>" target="_blank"><img src="images/print.gif" /></a> <{if $isAdmin || $canEdit}><a href="edit_event.php?event=<{$event.event_id}>"><img src="images/edit.gif" /></a><{/if}> <{if $isAdmin}><a href="admin/event.php?op=delete&event_id=<{$event.event_id}>"><img src="images/delete.gif" /></a><{/if}>
+			<div style="float:right;">
+				<a href="<{$icms_url}>/modules/extcal/print.php?event=<{$event.event_id}>" target="_blank"><img src="images/print.png" alt="" title="<{$lang.print}>" /></a> <{if $isAdmin || $canEdit}><a href="edit_event.php?event=<{$event.event_id}>"><img src="images/edit.png" alt="" title="<{$lang.edit}>" /></a><{/if}> <{if $isAdmin}><a href="admin/event.php?op=delete&event_id=<{$event.event_id}>"><img src="images/delete.png" alt="" title="<{$lang.delete}>" /></a><{/if}>
 			</div>
 		</th>
 	</tr>
 	<tr class="head">
 		<td style="background-color:#<{$event.cat.cat_color}>; width:5px;"></td>
-		<td style="width:50%;">
+		<td style="width:50%; padding: 5px;">
 			<{$event.cat.cat_name}><br />
 			<span style="font-weight:normal;"><{$event.cat.cat_desc}></span>
 		</td>
-		<td>
+		<td style="padding: 5px;">
 			<{if $event.event_isrecur}>
 				<{$lang.reccur_rule}> : <span style="font-weight:normal;"><{$event.formated_reccur_rule}></span>
 			<{else}>
