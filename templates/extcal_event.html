@@ -26,21 +26,28 @@
 	</tr>
 	<tr>
 		<td colspan="2" class="even">
-			<b><{$lang.contact_info}> :</b><br />
-			<span style="font-weight:normal;"><{$event.event_contact}><br />
-			<{$event.event_address}></span>
+			<{if $event.event_contact}>
+				<b><{$lang.contact_info}> :</b><br />
+				<span style="font-weight:normal;"><{$event.event_contact}></span><br />
+			<{/if}>
+			<{if $event.event_address}>
+				<b><{$lang.address}> :</b><br />
+				<span style="font-weight:normal;"><{$event.event_address}></span>
+			<{/if}>
 		</td>
 		<td class="even">
-			<b><{$lang.email}> :</b> <a href="mailto:<{$event.event_email}>"><{$event.event_email}></a><br />
-			<b><{$lang.url}> :</b> <a href="<{$event.event_url}>"><{$event.event_url}></a>
+			<{if $event.event_email}>
+				<b><{$lang.email}> :</b> <a href="mailto:<{$event.event_email}>"><{$event.event_email}></a><br />
+			<{/if}>
+			<{if $event.event_url}>
+				<b><{$lang.url}> :</b> <a href="<{$event.event_url}>"><{$event.event_url}></a>
+			<{/if}>
 		</td>
 	</tr>
 	<tr>
 		<td colspan="3" class="odd">
 			<span style="font-size:0.8em;"><{$lang.posted_by}> <a href="<{$icms_url}>/userinfo.php?uid=<{$event.user.uid}>"><{$event.user.uname}></a> <{$lang.on}> <{$event.formated_event_submitdate}></span>
-			<p>
-				<{$event.event_desc}>
-			</p>
+			<p><{$event.event_desc}></p>
 			<p style="text-align:right;">
 				<{foreach item=eventFile from=$event_attachement}>
 					<a href="download_attachement.php?file=<{$eventFile.file_id}>"><{$eventFile.file_nicename}> (<i><{$eventFile.file_mimetype}></i>) <{$eventFile.formated_file_size}></a><br />

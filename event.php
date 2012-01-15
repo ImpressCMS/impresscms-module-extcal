@@ -69,7 +69,8 @@ $lang = array(
 	'on'=>_MD_EXTCAL_ON,
 	'edit'=>_MD_EXTCAL_EDIT_EVENT,
 	'print'=>_MD_EXTCAL_PRINT,
-	'delete'=>_MD_EXTCAL_DELETE
+	'delete'=>_MD_EXTCAL_DELETE,
+	'address'=>_MD_EXTCAL_ADDRESS
 );
 // Assigning language data to the template
 $xoopsTpl->assign('lang', $lang);

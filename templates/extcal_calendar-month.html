@@ -7,10 +7,10 @@
 <{include file="db:extcal_navbar.html"}>
 
 <table class="outer" style="border-top: none;">
-	<tr style="text-align:center;">
+	<tr style="text-align:center; font-weight:bold;">
 		<th rowspan="2">&nbsp;</th>
 		<td colspan="2" class="even"><a href="<{$icms_url}>/modules/extcal/calendar-month.php?<{$navig.prev.uri}>"><img src="<{$icms_url}>/modules/extcal/images/control_rewind_blue.png" align="absmiddle" />&nbsp;<{$navig.prev.name}></a></td>
-		<td colspan="3" class="even"><span style="font-weight:bold;"><{$navig.this.name}></span></td>
+		<td colspan="3" class="even"><{$navig.this.name}></td>
 		<td colspan="2" class="even"><a href="<{$icms_url}>/modules/extcal/calendar-month.php?<{$navig.next.uri}>"><{$navig.next.name}>&nbsp;<img src="<{$icms_url}>/modules/extcal/images/control_fastforward_blue.png" align="absmiddle" /></a></td>
 	</tr>
 	<tr style="text-align:center;" class="head">
@@ -37,7 +37,7 @@
 	<tr>
 		<th colspan="8">
 		<{foreachq item=cat from=$cats}>
-		<div style="float:left; margin-left:10px;"><div style="float:left; background-color:#<{$cat.cat_color}>; border:1px solid white; margin-right:5px; height: 8px; width: 8px; margin-top: 4px;">&nbsp;</div><{$cat.cat_name}></div>
+		<div style="float:left; margin-left:10px;"><div class="extcal_legend" style="background-color:#<{$cat.cat_color}>;">&nbsp;</div><{$cat.cat_name}></div>
 		<{/foreach}>
 		</th>
 	</tr>
