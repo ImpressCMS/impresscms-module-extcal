@@ -5,7 +5,7 @@
 				<{$event.event_title}>
 			</div>
 			<div style="float:right;">
-				<a href="<{$icms_url}>/modules/extcal/print.php?event=<{$event.event_id}>" target="_blank"><img src="images/print.png" alt="" title="<{$lang.print}>" /></a> <{if $isAdmin || $canEdit}><a href="edit_event.php?event=<{$event.event_id}>"><img src="images/edit.png" alt="" title="<{$lang.edit}>" /></a><{/if}> <{if $isAdmin}><a href="admin/event.php?op=delete&event_id=<{$event.event_id}>"><img src="images/delete.png" alt="" title="<{$lang.delete}>" /></a><{/if}>
+				<a href="<{$icms_url}>/modules/extcal/print.php?event=<{$event.event_id}>" target="_blank"><img src="<{$icms_url}>/images/crystal/actions/fileprint.png" alt="" title="<{$lang.print}>" /></a> <{if $isAdmin || $canEdit}><a href="edit_event.php?event=<{$event.event_id}>"><img src="<{$icms_url}>/images/crystal/actions/edit.png" alt="" title="<{$lang.edit}>" /></a><{/if}> <{if $isAdmin}><a href="admin/event.php?op=delete&event_id=<{$event.event_id}>"><img src="<{$icms_url}>/images/crystal/actions/editdelete.png" alt="" title="<{$lang.delete}>" /></a><{/if}>
 			</div>
 		</th>
 	</tr>

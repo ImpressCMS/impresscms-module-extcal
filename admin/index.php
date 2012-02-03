@@ -126,9 +126,9 @@ switch($op) {
 
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#990000;">'._AM_EXTCAL_PENDING_EVENT.'</legend>';
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#0A3760;">'._AM_EXTCAL_INFORMATION.'</legend>';
-		echo '<img src="../images/approve.png" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_APPROVE_PENDING_EVENT.'<br />';
-		echo '<img src="../images/edit.png" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_EDIT_PENDING_EVENT.'<br />';
-		echo '<img src="../images/delete.png" style="vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_DELETE_PENDING_EVENT;
+		echo '<img src="'.ICMS_URL.'/images/crystal/actions/button_ok.png" style="padding: 2px; vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_APPROVE_PENDING_EVENT.'<br />';
+		echo '<img src="'.ICMS_URL.'/images/crystal/actions/edit.png" style="padding: 2px; vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_EDIT_PENDING_EVENT.'<br />';
+		echo '<img src="'.ICMS_URL.'/images/crystal/actions/editdelete.png" style="padding: 2px; vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_DELETE_PENDING_EVENT;
 		echo '</fieldset><br />';
 
 		echo '<table class="outer" style="width:100%;">';
@@ -149,14 +149,14 @@ switch($op) {
 				echo '<td>'.$event['event_title'].'</td>';
 				echo '<td>'.$event['formated_event_start'].'</td>';
 				echo '<td>'.$event['formated_event_end'].'</td>';
-				echo '<td style="width:10%; text-align:center;">';
-				echo '<a href="event.php?op=modify&amp;event_id='.$event['event_id'].'"><img src="../images/edit.png" /></a>&nbsp;&nbsp;';
-				echo '<a href="event.php?op=delete&amp;event_id='.$event['event_id'].'"><img src="../images/delete.png" /></a>';
+				echo '<td style="text-align:center;">';
+				echo '<a href="event.php?op=modify&amp;event_id='.$event['event_id'].'"><img src="'.ICMS_URL.'/images/crystal/actions/edit.png" /></a>&nbsp;&nbsp;';
+				echo '<a href="event.php?op=delete&amp;event_id='.$event['event_id'].'"><img src="'.ICMS_URL.'/images/crystal/actions/editdelete.png" /></a>';
 				echo '</td>';
 				echo '</tr>';
 			}
 		} else {
-			echo '<tr><td colspan="4">'._AM_NO_PENDING_EVENT.'</td></tr>';
+			echo '<tr><td colspan="5" style="font-weight: bold; text-align: center;">'._AM_NO_PENDING_EVENT.'</td></tr>';
 		}
 
 		echo '</table></fieldset><br />';

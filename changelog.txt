@@ -4,6 +4,7 @@
 - Added license.txt
 - Fixed fieldsets/legend in administration
 - Make use of ICMS admin panel
+- Make use of ICMS icons (Crystal)
 - New permission page
 - Started new changelog (old one renamed to changelog.old.txt)
 
