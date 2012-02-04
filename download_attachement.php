@@ -34,7 +34,7 @@ $fileHandler = icms_getModuleHandler('file', 'extcal');
 $file = $fileHandler->getFile($fileId);
 
 header("Content-Type: ".$file->getVar('file_mimetype')."");
-header("Content-Disposition: attachment; filename=\"".$file->getVar('file_nicename')."\"");
+header("Content-Disposition: attachment; filename=\"".$file->getVar('file_name')."\"");
 
-readfile(ICMS_ROOT_PATH.'/uploads/'.icms::$module->getVar('dirname').'/'.$file->getVar('file_name'));
+readfile(ICMS_ROOT_PATH.'/uploads/calendar/'.$file->getVar('file_name'));
 ?>
