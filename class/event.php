@@ -653,14 +653,14 @@ class ExtcalEventHandler extends ExtcalPersistableObjectHandler {
 
 		// If they are attached file to this event
 		if(count($files) > 0) {
-			$eventFiles = new icms_form_elements_Checkbox('', 'filetokeep');
+			$eventFiles = new ExtcalFormFileCheckBox('', 'filetokeep');
 			foreach($files as $file) {
 				$name = $file['file_nicename']." (<i>".$file['file_mimetype']."</i>) ".$file['formated_file_size'];
 				$eventFiles->addOption($file['file_id'], $name);
 			}
 			$fileElmtTray->addElement($eventFiles);
 		}
-		$fileElmtTray->addElement(new icms_form_elements_File( '<br />'._MD_EXTCAL_FILE_ATTACHEMENT, 'event_file', 3145728));
+		$fileElmtTray->addElement(new icms_form_elements_File(_MD_EXTCAL_FILE_ATTACHEMENT, 'event_file', 3145728));
 		$form->addElement($fileElmtTray);
 
 		if(isset($data['event_id'])) {

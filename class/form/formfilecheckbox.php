@@ -3,7 +3,7 @@
 class ExtcalFormFileCheckBox extends icms_form_elements_Checkbox {
 
 	function ExtcalFormFileCheckBox($caption, $name, $value = null){
-		$this->icms_form_elements_Checkbox($caption, $name, $value);
+		//$this->icms_form_elements_Checkbox($caption, $name, $value);
 	}
 
 	/**
@@ -20,7 +20,7 @@ class ExtcalFormFileCheckBox extends icms_form_elements_Checkbox {
 		foreach ( $this->getOptions() as $value => $name ) {
 			$ret .= "<input type='checkbox' name='".$this->getName()."' value='".$value."'";
 			$ret .= " checked='checked'";
-			$ret .= $this->getExtra()." />".$name."<br />\n";
+			$ret .= $this->getExtra()." />&nbsp;".$name."<br />\n";
 		}
 		return $ret;
 	}
