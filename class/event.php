@@ -629,7 +629,7 @@ class ExtcalEventHandler extends ExtcalPersistableObjectHandler {
 		}
 		$form->addElement($catSelect, true);
 		// Title
-		$form->addElement(new icms_form_elements_Text(_MD_EXTCAL_TITLE, 'event_title', 30, 255, $title), true);
+		$form->addElement(new icms_form_elements_Text(_MD_EXTCAL_TITLE, 'event_title', 50, 255, $title), true);
 		// Start and end
 		new ExtcalFormDateTime($form, $startDateValue, $endDateValue);
 		// Description
@@ -639,11 +639,11 @@ class ExtcalEventHandler extends ExtcalPersistableObjectHandler {
 		$nbMemberElement->setDescription(_MD_EXTCAL_NBMEMBER_DESC);
 		$form->addElement($nbMemberElement, false);
 		// Contact
-		$form->addElement(new icms_form_elements_Text(_MD_EXTCAL_CONTACT, 'event_contact', 30, 255, $contact), false);
+		$form->addElement(new icms_form_elements_Text(_MD_EXTCAL_CONTACT, 'event_contact', 50, 255, $contact), false);
 		// Url
-		$form->addElement(new icms_form_elements_Text(_MD_EXTCAL_URL, 'event_url', 30, 255, $url), false);
+		$form->addElement(new icms_form_elements_Text(_MD_EXTCAL_URL, 'event_url', 50, 255, $url), false);
 		// Email
-		$form->addElement(new icms_form_elements_Text(_MD_EXTCAL_EMAIL, 'event_email', 30, 255, $email), false);
+		$form->addElement(new icms_form_elements_Text(_MD_EXTCAL_EMAIL, 'event_email', 50, 255, $email), false);
 		// Address
 		$form->addElement(new icms_form_elements_Dhtmltextarea(_MD_EXTCAL_ADDRESS, 'event_address', $address), false);
 		// Recurence form

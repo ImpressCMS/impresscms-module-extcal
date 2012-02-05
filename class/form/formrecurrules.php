@@ -156,7 +156,7 @@ class ExtcalFormRecurRules extends icms_form_Element {
 		$formObject->addOption('11', _MD_EXTCAL_NOV);
 		$formObject->addOption('12', _MD_EXTCAL_DEC);
 		$ret .= $formObject->render();
-		$ret .= '<br />';
+		$ret .= '<br /><br /><br />';
 
 		$formObject = new icms_form_elements_Select('', 'rrule_yearly_byday', $this->_rrule_yearly_byday);
 		$formObject->addOption('', _MD_EXTCAL_SAME_ST_DATE);
