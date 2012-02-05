@@ -127,8 +127,8 @@ class ExtcalFileHandler extends ExtcalPersistableObjectHandler {
 	}
 
 	function _deleteFile(&$file) {
-		if(file_exists(ICMS_ROOT_PATH.'/uploads/calendar/'.$file->getVar('file_name')))
-			unlink(ICMS_ROOT_PATH.'/uploads/calendar/'.$file->getVar('file_name'));
+		if(file_exists(ICMS_ROOT_PATH.'/uploads/extcal/'.$file->getVar('file_name')))
+			unlink(ICMS_ROOT_PATH.'/uploads/extcal/'.$file->getVar('file_name'));
 	}
 }
 ?>
