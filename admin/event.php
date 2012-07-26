@@ -125,8 +125,8 @@ switch($op) {
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#990000;">'._AM_EXTCAL_APPROVED_EVENT.'</legend>';
 		
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#0A3760;">'._AM_EXTCAL_INFORMATION.'</legend>';
-		echo '<img src="'.ICMS_URL.'/images/crystal/actions/edit.png" style="padding: 2px; vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_EDIT.'<br />';
-		echo '<img src="'.ICMS_URL.'/images/crystal/actions/editdelete.png" style="padding: 2px; vertical-align:middle;" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_DELETE;
+		echo '<img src="'. ICMS_IMAGES_SET_URL . '/actions/edit.png" style="padding: 2px; vertical-align:middle;" alt="' . _EDIT . '" title="' . _EDIT . '" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_EDIT.'<br />';
+		echo '<img src="'. ICMS_IMAGES_SET_URL . '/actions/editdelete.png" style="padding: 2px; vertical-align:middle;" alt="' . _DELETE . '" title="' . _DELETE . '" />&nbsp;&nbsp;'._AM_EXTCAL_INFO_DELETE;
 		echo '</fieldset><br />';
 
 		echo '<fieldset style="border: #e8e8e8 1px solid;"><legend style="font-weight:bold; color:#0A3760;">'._MD_EXTCAL_SUBMITED_EVENT.'</legend>';
@@ -159,8 +159,8 @@ switch($op) {
 				}
 				echo '<td>'.$event['formated_event_end'].'</td>';
 				echo '<td style="text-align:center;">';
-				echo '<a href="event.php?op=modify&amp;event_id='.$event['event_id'].'"><img src="'.ICMS_URL.'/images/crystal/actions/edit.png" /></a>&nbsp;';
-				echo '<a href="event.php?op=delete&amp;event_id='.$event['event_id'].'"><img src="'.ICMS_URL.'/images/crystal/actions/editdelete.png" /></a>';
+				echo '<a href="event.php?op=modify&amp;event_id='.$event['event_id'].'"><img src="'. ICMS_IMAGES_SET_URL . '/actions/edit.png" alt="' . _EDIT . '" title="' . _EDIT . '" /></a>&nbsp;';
+				echo '<a href="event.php?op=delete&amp;event_id='.$event['event_id'].'"><img src="'. ICMS_IMAGES_SET_URL . '/actions/editdelete.png" alt="' . _DELETE . '" title="' . _DELETE . '" /></a>';
 				echo '</td>';
 				echo '</tr>';
 			}
