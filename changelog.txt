@@ -1,0 +1,21 @@
+- Converted to ImpressCMS 1.3 module
+
+- Added About page
+- Added license.txt
+- Fixed fieldsets/legend in administration
+- Make use of ICMS admin panel
+- Make use of ICMS icons (Crystal)
+- New permission page
+- Started new changelog (old one renamed to changelog.old.txt)
+
+Files removed:
+- xoops_version.php
+- admin/function.php
+- images/icalendar_logo.png
+- images/left_both.gif
+- images/modadminbig.gif
+- images/right_both.gif
+- images/approve.gif
+- images/delete.gif
+- images/edit.gif
+- images/print.gif

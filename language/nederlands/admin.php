@@ -1,0 +1,70 @@
+<?php
+
+define('_AM_ICALENDAR_GO_TO_MODULE', 'Ga naar module');
+define('_AM_ICALENDAR_PREFERENCES', 'Instellingen');
+define('_AM_ICALENDAR_ADMINISTRATION', 'Administratie');
+
+define("_AM_ICALENDAR_CATEGORY", "Categorie");
+define("_AM_ICALENDAR_EVENT", "Afspraak");
+define('_AM_ICALENDAR_MODULE_ADMIN_SUMMARY', 'Calendar Administratie Overzicht');
+define('_AM_ICALENDAR_UPDATE_INFO', 'Informatie bijwerken');
+define('_AM_ICALENDAR_CHECK_UPDATE_ERROR', 'Kan de laatste versie van Calendar niet vinden.');
+define('_AM_ICALENDAR_UPDATE_KO', 'Deze versie van Calendar is verouderd. We raden u aan om op updates te controleren op <a href=\"http://www.zoullou.net/\">Zoullou.net</a>.');
+define('_AM_ICALENDAR_UPDATE_UPGRADE', 'Klik hier om de module naar een nieuwere versie te updaten');
+define('_AM_ICALENDAR_UPDATE_OK', 'U gebruikt de meest recente versie van Calendar met alle laatste updates voor stabiliteit and veiligheid.');
+define('_AM_ICALENDAR_PENDING', 'In wachtrij');
+define('_AM_ICALENDAR_APPROVED', 'Goedgekeurd');
+define('_AM_ICALENDAR_SUBMITTED_EVENT', 'Ingestuurde afspraak');
+define('_AM_ICALENDAR_INFORMATION', 'Informatie');
+define('_AM_ICALENDAR_PENDING_EVENT', 'Afspraak in wachtrij');
+define('_AM_ICALENDAR_INFO_APPROVE_PENDING_EVENT', '<b>Goedkeuren</b> van de nieuwe afspraak zonder de informatie te lezen.');
+define('_AM_ICALENDAR_INFO_EDIT_PENDING_EVENT', '<b>Wijzig</b> de nieuwe afspraak voor goedkeuring.');
+define('_AM_ICALENDAR_INFO_DELETE_PENDING_EVENT', '<b>Verwijder</b> de nieuwe afspraak.');
+define('_AM_ICALENDAR_TITLE', 'Titel');
+define('_AM_ICALENDAR_START_DATE', 'Start Datum');
+define('_AM_ICALENDAR_ACTION', 'Actie');
+define('_AM_NO_PENDING_EVENT', 'Geen afspraken in wachtrij');
+define('_AM_ICALENDAR_EDIT_OR_DELETE_CATEGORY', 'Wijzig of verwijder categorie');
+define('_AM_ICALENDAR_EDIT_CATEGORY', 'Wijzig categorie');
+define('_AM_ICALENDAR_ADD_CATEGORY', 'Voeg categorie toe');
+define('_AM_ICALENDAR_NAME', 'Naam');
+define('_AM_ICALENDAR_DESCRIPTION', 'Omschrijving');
+define('_AM_ICALENDAR_COLOR', 'Kleur');
+define('_AM_ICALENDAR_APPROVED_EVENT', 'Keur afspraak goed');
+define('_AM_ICALENDAR_INFO_EDIT', '<b>Wijzig</b> afspraak.');
+define('_AM_ICALENDAR_INFO_DELETE', '<b>Verwijder</b> afspraak.');
+define('_AM_ICALENDAR_VIEW_PERMISSION', 'Bekijk toegangsrechten');
+define('_AM_ICALENDAR_VIEW_PERMISSION_DESC', 'Selecteer de categorieën en groepen waarvan afspraken mogen worden bekeken');
+define('_AM_ICALENDAR_SUBMIT_PERMISSION', 'Verstuur toegangsrechten');
+define('_AM_ICALENDAR_SUBMIT_PERMISSION_DESC', 'Selecteer de categorieën en groepen waarvan afspraken mogen worden insturen');
+define('_AM_ICALENDAR_AUTOAPPROVE_PERMISSION', 'Automatisch goedkeuren');
+define('_AM_ICALENDAR_AUTOAPPROVE_PERMISSION_DESC', 'Selecteer de categorieën en groepen waarbij goedkeuren automatisch verloopt');
+define('_AM_ICALENDAR_PERM_NO_CATEGORY', 'U moet eerst een categorie aanmaken');
+define('_AM_ICALENDAR_CAT_EDITED', 'Categorie gewijzigd');
+define('_AM_ICALENDAR_CAT_CREATED', 'Categorie aangemaakt');
+define('_AM_ICALENDAR_EVENT_EDITED', 'Afspraak gewijzigd');
+define('_AM_ICALENDAR_EVENT_CREATED', 'Afspraak aangemaakt');
+define('_AM_ICALENDAR_PUBLIC_PERM_MASK', 'Algemene teogangsrechten');
+define('_AM_ICALENDAR_PUBLIC_PERM_MASK_INFO', 'U kunt standaard toegangsrechten instellen die van toepassing zijn op nieuwe categorieën. Wees voorzichtig met te ruime permissies omdat alle nieuwe categorieën deze rechten standaard krijgen!');
+define('_AM_ICALENDAR_GROUP_NAME', 'Groep naam');
+define('_AM_ICALENDAR_CAN_VIEW', 'Bekijken');
+define('_AM_ICALENDAR_CAN_SUBMIT', 'Insturen');
+define('_AM_ICALENDAR_AUTO_APPROVE', 'Afspraken automatisch goedkeuren');
+define('_AM_ICALENDAR_MD_FILE_DONT_EXIST', 'Module bestand bestaat niet voor :<br /><b>Server : </b>%s<br /><b>File : </b>%s');
+define('_AM_ICALENDAR_LG_FILE_DONT_EXIST', 'Vertaalbestand bestaat niet voor :<br /><b>Server : </b>%s<br /><b>File : </b>%s');
+define('_AM_ICALENDAR_DOWN_DONE', 'Downloaden is voltooid. Klik hier om de bestanden te installeren');
+define('_AM_ICALENDAR_INSTALL', 'Installeer bestanden');
+define('_AM_ICALENDAR_MD_FILE_DONT_EXIST_SHORT', 'Module bestand bestaat niet');
+define('_AM_ICALENDAR_INSTALL_DONE', 'Installie voltooid. Klik hier om de module bij te werken');
+define('_AM_ICALENDAR_UPDATE', 'Module bijwerken');
+define('_AM_ICALENDAR_PERM_MASK_UPDATED', 'Toegangsrechten bijgewerkt');
+define('_AM_ICALENDAR_CAN_EDIT', 'Kan wijzigen');
+define('_AM_ICALENDAR_EDIT_PERMISSION', 'Wijzig toegangsrechten');
+define('_AM_ICALENDAR_EDIT_PERMISSION_DESC', 'Selecteer categorieën waarin alle groepsleden afspraken mogen wijzigen');
+define('_AM_ICALENDAR_CONFIRM_DELETE_EVENT', 'Bevestig het verwijderen van de afspraak.');
+define('_AM_ICALENDAR_EVENT_DELETED', 'Afspraak succesvol verwijderd.');
+
+define('_AM_ICALENDAR_END_DATE', 'Eind Datum');
+define('_AM_ICALENDAR_PERMISSIONS', 'Bevoegdheden');
+
+?>

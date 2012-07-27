@@ -1,0 +1,14 @@
+<table class="outer">
+	<tr>
+		<th style="text-align: left;">&nbsp;<{$smarty.const._MB_ICALENDAR_EVENT}></th>
+		<th><{$smarty.const._MB_ICALENDAR_STARTDATE}></th>
+		<th><{$smarty.const._MB_ICALENDAR_STARTEND}></th>
+	</tr>
+	<{foreachq item=event from=$block}>
+	<tr class="<{cycle values="even,odd"}>">
+		<td><a href="<{$icms_url}>/modules/icalendar/event.php?event=<{$event.event_id}>" title="<{$event.event_title}>"><{$event.event_title}></a></td>
+		<td style="text-align: center;"><{$event.formated_event_start}></td>
+		<td style="text-align: center;"><{$event.formated_event_end}></td>
+	</tr>
+	<{/foreach}>
+</table>
